@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="is">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>APISAPISAPIS</title>
+		<link href='https://fonts.googleapis.com/css?family=Poppins:400,300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto:500,400' rel='stylesheet' type='text/css'>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="header">
+					<h1>DAGSKRÁ!</h1>
+					<p>Sjónvarpsdagskráin í dag á helstu íslensku stöðvunum.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div id="channel-selection" class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Velja stöð <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li id="ruv"><a>RÚV</a></li>
+								<li role="separator" class="divider"></li>
+								<li id="stod2"><a>Stöð 2</a></li>
+								<li id="stod2sport"><a>Stöð 2 Sport</a></li>
+								<li id="stod2sport2"><a>Stöð 2 Sport 2</a></li>
+								<li id="stod2gull"><a>Stöð 2 Gull</a></li>
+								<li id="stod2bio"><a>Stöð 2 Bíó</a></li>
+								<li role="separator" class="divider"></li>
+								<li id="stod3"><a>Stöð 3</a></li>
+								<li id="skjar1"><a>Skjár 1</a></li>
+							</ul>
+						</div>
+						<p id="chosen-channel">RÚV</p>
+					</div>
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Kl:</th>
+								<th>Efni</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="loading-message">Sæki dagskrá</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="panel-footer"><p>Fannar Freyr Kristinsson</p></div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
