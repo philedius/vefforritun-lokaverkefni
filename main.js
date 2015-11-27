@@ -16,14 +16,9 @@ $( document ).ready(function() {
 });
 
 function handleAnimations() {
+	// Fade in þegar síða loadar
 	$('.header').hide().fadeIn(750);
 	$('.panel').hide().fadeIn(750);
-
-	//Collapse-a lýsingar á sjónvarpsefni
-	// $('.collapse').on('show.bs.collapse', function () {
- //    	$('.collapse.in').collapse('hide');
-
-	// });
 
 	// Animation á örvum
 	$('.table').on('click', 'tr', function() {
@@ -93,7 +88,6 @@ function appendToTable(content, contentDescription) {
 
 function handleChannelSelection() {
     $("#channel-selection li").click(function() {
-		console.log(Date());
 		$(".table tbody").empty();
 		var content = "<tr><td class='loading-message'>Sæki dagskrá</td><td></td><td></td></tr>";
 		$(".table tbody").append(content);
@@ -102,7 +96,6 @@ function handleChannelSelection() {
     	// Sækja gögn í cache
     	var $this = $(this);
     	if (typeof this.ajaxHtml !== 'undefined') {
-    		console.log('hehe');
     		setupSchedule(this.ajaxHtml);
     		return;
     	}
