@@ -94,7 +94,6 @@ function handleChannelSelection() {
     	
     	var $this = $(this);
     	if (typeof this.ajaxHtml !== 'undefined') {
-    		console.log('hehe');
     		setupSchedule(this.ajaxHtml);
     		return;
     	}
