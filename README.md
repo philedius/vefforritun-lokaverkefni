@@ -1,5 +1,5 @@
 ﻿# Dagskrá: Lokaverkefni í vefforritun
-
+http://pure-fjord-9273.herokuapp.com/
 ### Uppsetning
 Það eina sem þarf að gera er að gera: "npm install" og svo "gulp" til að keyra.
 ### Ferlið
